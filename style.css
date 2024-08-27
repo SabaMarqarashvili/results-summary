@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+:root {
+  --Gradient-1: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+  --Light-Blue: #cac9ff;
+  --White: #fff;
+  --red-95-white: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #f55;
+
+  --yellow-95-white: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #ffb21e;
+
+  --green-95-white: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #00bb8f;
+
+  --blue-95-white: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #1125d6;
+
+  --Very-Light-blue: #ecf2ff;
+
+  --max-width: 460px;
+}
+
+header {
+  background: var(--Gradient-1);
+  box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+  border-radius: 0px 0px 32px 32px;
+  text-align: center;
+  padding: 24px 60px 40px;
+  width: 100%;
+}
+
+header,
+main {
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.result {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--Light-Blue);
+}
+
+h1 {
+  font-size: 56px;
+  color: var(--White);
+  font-weight: 800;
+  line-height: 72px;
+}
+
+.total-point {
+  color: var(--Light-Blue);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.rate {
+  color: var(--White);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.desc {
+  color: var(--Light-Blue);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.score-box {
+  position: relative;
+  margin-block: 24px;
+}
+
+.score-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.desc {
+  margin-top: 8px;
+}
+
+.detail-points {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+main h2 {
+  padding: 24px 265px 0px 32px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--Dark-Navy, #303b59);
+}
+
+.task {
+  width: 100%;
+  border-radius: 12px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.task-result {
+  color: var(--Dark-Navy, #303b59);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.task2 {
+  color: var(--Dark-Navy, #303b59);
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.task3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.task3 {
+  padding: 16px 17px;
+  gap: 12px;
+}
+
+.task4 {
+  padding-top: 17px;
+  padding-right: 16px;
+  padding-bottom: 18px;
+  gap: 8px;
+}
+
+.reaction {
+  background: var(--red-95-white);
+}
+
+.memory {
+  background: var(--yellow-95-white);
+}
+
+.verbal {
+  background: var(--green-95-white);
+}
+
+.visual {
+  background: var(--blue-95-white);
+}
+
+.reaction h3 {
+  color: var(--Red, #f55);
+}
+
+.memory h3 {
+  color: var(--Yellow, #ffb21e);
+}
+
+.verbal h3 {
+  color: var(--Green, #00bb8f);
+}
+
+.visual h3 {
+  color: var(--Blue, #1125d6);
+}
+
+.button {
+  width: 315px;
+  height: 56px;
+  background: var(--Dark-Navy, #303b59);
+  border-radius: 128px;
+}
+
+.text {
+  color: var(--White, #fff);
+  text-align: right;
+  font-size: 18px;
+  font-weight: 700;
+  background: none;
+  border: none;
+  padding: 17px 120px 16px;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Very-Light-blue);
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  header {
+    border-radius: 32px;
+  }
+
+  main {
+    background-color: var(--White);
+    border-radius: 32px;
+    position: relative;
+  }
+
+  header,
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 368px;
+    /* height: 512px; */
+    /* justify-content: space-between; */
+  }
+
+  main::before {
+    content: "";
+    position: absolute;
+    background-color: var(--White);
+    height: 100%;
+    width: 60px;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
